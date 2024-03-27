@@ -20,10 +20,7 @@ video {
   width: 100%;
 }
 #cover-image {
-  background-image: url("https://gifdb.com/images/high/interstellar-cooper-is-amazed-bnpmzks2ivaaigjm.gif");
-  background-repeat: no-repeat;
   height: 700px;
-  background-size: cover;
 
   display: flex;
   flex-direction: column;
