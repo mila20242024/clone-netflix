@@ -1,0 +1,26 @@
+body {
+  color: white;
+}
+.navbar {
+  background: black;
+  z-index: 1; /*x farlo stare sopra il video */
+  width: 100%;
+}
+.navbar img {
+  width: 100px;
+}
+.d-flex {
+  align-items: center;
+}
+video {
+  width: 100%;
+}
+#cover-image img {
+  width: 100%;
+}
+#cover-image {
+  background-image: url("https://gifdb.com/images/high/interstellar-cooper-is-amazed-bnpmzks2ivaaigjm.gif");
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: cover;
+}

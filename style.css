@@ -1,0 +1,78 @@
+body {
+  color: white;
+  background-color: #141414 !important;
+}
+.navbar {
+  background: #0A0A0A;
+  z-index: 1; /*x farlo stare sopra il video */
+  width: 100%;
+}
+.navbar img {
+  width: 100px;
+}
+.d-flex {
+  align-items: center;
+}
+video {
+  width: 100%;
+}
+#cover-image img {
+  width: 100%;
+}
+#cover-image {
+  background-image: url("https://gifdb.com/images/high/interstellar-cooper-is-amazed-bnpmzks2ivaaigjm.gif");
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.col-6 {
+  padding: 0 0 5% 3%;
+}
+.card-body {
+  display: none;
+}
+.bg-body-tertiary {
+  background-color: #141414 !important;
+}
+#movie .col {
+  width: 20%;
+}
+.card {
+  border: none;
+}
+#movie .row{
+  display: flex;
+  justify-content: center;
+}
+.shadow-sm {
+  box-shadow: none !important;
+}
+footer .text-body-secondary{
+  color: grey !important;
+}
+footer .col-6{
+  padding: 0 0 0% 3%;
+  
+}
+footer .border-top{
+  border-top: none !important;
+}
+#cover-image {
+  position: relative;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#cover-image .row{
+  z-index: 1;
+}
