@@ -3,7 +3,7 @@ body {
   background-color: #141414 !important;
 }
 .navbar {
-  background: #0A0A0A;
+  background: #0a0a0a;
   z-index: 1; /*x farlo stare sopra il video */
   width: 100%;
 }
@@ -27,7 +27,7 @@ video {
   justify-content: flex-end;
 }
 .col-6 {
-  padding: 0 0 5% 3%;
+  padding: 0 0 5% 0%;
 }
 .card-body {
   display: none;
@@ -41,21 +41,20 @@ video {
 .card {
   border: none;
 }
-#movie .row{
+#movie .row {
   display: flex;
   justify-content: center;
 }
 .shadow-sm {
   box-shadow: none !important;
 }
-footer .text-body-secondary{
+footer .text-body-secondary {
   color: grey !important;
 }
-footer .col-6{
+footer .col-6 {
   padding: 0 0 0% 3%;
-  
 }
-footer .border-top{
+footer .border-top {
   border-top: none !important;
 }
 #cover-image {
@@ -70,6 +69,96 @@ footer .border-top{
   height: 100%;
   object-fit: cover;
 }
-#cover-image .row{
+#cover-image .row {
+  z-index: 0;
+  padding-bottom: 20px;
+}
+h5 {
+  padding-left: 3%;
+}
+form .btn {
+  background-color: #0a0a0a !important;
+  border: none;
+}
+.form-control {
+  background-color: #0a0a0a !important;
+}
+
+.icone_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+@media (max-width: 767px) {
+  #cover-image {
+    height: 500px;
+  }
+}
+
+/* css per carousel netflix */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1 {
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+.wrapper section .item {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+.wrapper section .item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
   z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
 }
